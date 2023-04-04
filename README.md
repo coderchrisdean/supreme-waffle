@@ -1,2 +1,2 @@
-# supreme-waffle
-Module 20 Assignment
+# React Portfolio
+This is a portfolio built with React.
