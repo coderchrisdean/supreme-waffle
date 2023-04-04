@@ -1,0 +1,24 @@
+@import '../../css/style.css';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.contact-link {
+    margin: 0 10px; 
+}
+
+
+a.contact-link:not(:last-child) {
+    margin-right: 20px;
+}

@@ -1,0 +1,7 @@
+@import '../../css/style.css';
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
