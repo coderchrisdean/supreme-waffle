@@ -9,16 +9,18 @@ import Footer from './components/Footer/Footer';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 
+
 function App() {
+  const music = "https://storage.cloud.google.com/c-dean-host-files/TimTaj%20-%20Ramadan.mp3"
   return (
     <div className="App">
-      <Intro /> 
+      <Intro musicPath={music} />
       <Header />
       <AboutMe />
       <Contact />
       {/* <Portfolio /> */}
-      {/* <Resume />  */}
-      <Footer /> 
+      {/* <Resume /> */}
+      <Footer />
     </div>
   );
 }
