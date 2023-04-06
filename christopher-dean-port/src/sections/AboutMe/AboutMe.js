@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutMe.css";
-import Avatar from "../../components/Avatar/Avatar"; //import avatar
+
 
 const AboutMe = () => {
   return (
     <div className="about-me">
-      <Avatar size="large" />
+     
       <div className="about-me-text">
         <h2>About Me</h2>
         <p>

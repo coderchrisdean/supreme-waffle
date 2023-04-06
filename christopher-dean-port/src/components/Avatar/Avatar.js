@@ -2,20 +2,17 @@ import React from 'react';
 import './Avatar.css';
 import avatarImage from '../../assets/images/AVATAR.jpeg';
 
-const Avatar = ({ src, alt, size }) => {
+const Avatar = ({ size }) => {
   return (
     <img
-      src={src}
-      alt={alt}
+      src={avatarImage}
+      alt="Christopher-Dean-Pharaoh"
       className={`avatar ${size === 'large' ? 'avatar-large' : ''}`}
     />
   );
 };
 
-
 Avatar.defaultProps = {
-  src: avatarImage,
-  alt: 'Christopher-Dean-Pharaoh',
   size: 'normal'
 };
 

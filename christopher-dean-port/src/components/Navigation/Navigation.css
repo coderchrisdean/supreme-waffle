@@ -4,15 +4,18 @@
 
 .nav-list {
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+ 
 }
-nav-item {
+.nav-item {
     margin-right: 1rem;
-}
-
-.nav-link {
+    border: 1px solid #fff;
+    padding: 5px;
+  }
+  
+  .nav-link {
     background: none;
     border: none;
     color: white;
@@ -21,9 +24,14 @@ nav-item {
     outline: none;
     padding: 0;
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-link:hover, .active, .nav-link  {
+    transition: color 0.3s, text-shadow 0.3s; 
+  }
+  
+  .nav-link:hover, .active {
     color: #23d997;
-}
+    text-shadow: 0 0 10px #23d997; 
+  }
+  
+  li {
+    padding-right: 10px;
+  }
