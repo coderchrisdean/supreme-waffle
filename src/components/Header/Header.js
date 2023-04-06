@@ -1,7 +1,6 @@
 import React from 'react';
 import Avatar from '../Avatar/Avatar';
 import Navigation from '../Navigation/Navigation';
-import avatarImage from '../../assets/images/AVATAR.jpeg';
 import './Header.css';
 
 const Header = () => {
