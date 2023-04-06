@@ -10,3 +10,13 @@ main {
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.about-me-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+
+  color: #fff;
+  margin: 20px;
+
+}

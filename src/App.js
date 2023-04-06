@@ -6,6 +6,7 @@ import Portfolio from './sections/Portfolio/Portfolio';
 import Contact from './sections/Contact/Contact';
 import Resume from './sections/Resume/Resume';
 import Footer from './components/Footer/Footer';
+import PhotoSection from './components/PhotoSection/PhotoSection';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 
@@ -16,10 +17,13 @@ function App() {
     <div className="App">
       <Intro musicPath={music} />
       <Header />
+      <div className="container">
+      <PhotoSection />
       <AboutMe />
-      <Contact />
       {/* <Portfolio /> */}
       {/* <Resume /> */}
+      <Contact />
+      </div>
       <Footer />
     </div>
   );

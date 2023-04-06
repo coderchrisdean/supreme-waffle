@@ -1,11 +1,15 @@
 .header {
   background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #333;
+  z-index: 5;
 }
 
 .header-content {
