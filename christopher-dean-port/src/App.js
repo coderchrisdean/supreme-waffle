@@ -5,18 +5,19 @@ import Portfolio from './sections/Portfolio/Portfolio';
 import Contact from './sections/Contact/Contact';
 import Resume from './sections/Resume/Resume';
 import Footer from './components/Footer/Footer';
+import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <main> */}
+      
         <AboutMe />
-        {/* <Portfolio />
         <Contact />
-        <Resume />
-      {/* </main> */}
+        {/* <Portfolio /> */}
+        {/* <Resume />  */}
+     
       <Footer /> 
     </div>
   );
