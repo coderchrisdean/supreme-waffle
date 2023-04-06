@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -b gh-pages -d build"
   },
-  "homepage": "https://coderchrisdean.github.io/supreme-waffle/christopher-dean-port",
+  "homepage": "https://coderchrisdean.github.io/supreme-waffle/",
   "eslintConfig": {
     "extends": [
       "react-app",
