@@ -11,16 +11,16 @@ const Contact = ({ phone, email, github, linkedin }) => {
 
   useEffect(() => {
     tippy(phoneRef.current, {
-      content: 'Phone number',
+      content: 'Phone Number',
     });
     tippy(emailRef.current, {
-      content: 'Email address',
+      content: 'E-mail Address',
     });
     tippy(githubRef.current, {
-      content: 'GitHub profile',
+      content: 'GitHub Profile',
     });
     tippy(linkedinRef.current, {
-      content: 'LinkedIn profile',
+      content: 'LinkedIn Profile',
     });
   }, []);
 

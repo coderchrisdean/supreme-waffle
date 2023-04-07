@@ -7,13 +7,13 @@
   background-color: black;
   padding: 2rem;
   /* border-radius: 50%; */
-  box-shadow: 0 0 20px 10px rgba(255, 200, 0, 0.5);
+  box-shadow: 0 0 20px 10px white;
   z-index: 10;
   animation: glowing 3s ease-in-out infinite;
 }
 
 .contact:hover {
-  box-shadow: 0 0 40px 20px rgba(255, 200, 0, 0.5);
+  box-shadow: 0 0 40px 20px white;
 }
 
 .contact-info {
@@ -29,23 +29,23 @@
   margin-right: 20px;
   color: white;
   text-decoration: none;
-  box-shadow: 0 0 5px #23d997;
+  box-shadow: 0 0 5px white;
   transition: box-shadow 0.5s ease-in-out;
 }
 
 .contact-link:hover {
-  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 20px 10px white;
 }
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 5px yellow;
+    box-shadow: 0 0 5px white;
   }
   50% {
-    box-shadow: 0 0 30px yellow;
+    box-shadow: 0 0 30px white;
   }
   100% {
-    box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px white;
   }
 }
 

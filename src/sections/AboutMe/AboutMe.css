@@ -11,11 +11,11 @@ main {
   gap: 20px;
 }
 
-.about-me-text {
+.about-me {
   display: flex;
   flex-wrap: wrap;
   font-size: 25px;
-
+  padding-top: 2rem;
   color: #fff;
   margin: 20px;
 
