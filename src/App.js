@@ -18,7 +18,7 @@ function App() {
     const userAgent = navigator.userAgent.toLowerCase();
     setIsMobile(userAgent.includes('mobi') || userAgent.includes('android'));
   }, []);
-
+  
   const music = "https://storage.cloud.google.com/c-dean-host-files/TimTaj%20-%20Ramadan.mp3";
 
   return (
@@ -28,21 +28,21 @@ function App() {
       {isMobile ? (
         <div className="mobile-container">
           <Intro musicPath={music} />
-          <PhotoSection />
+          {/* <PhotoSection /> */}
           <AboutMe />
-          <Portfolio />
-          <Resume />
+          {/* <Portfolio /> */}
+          {/* <Resume /> */}
           <Contact />
         </div>
       ) : (
         <div className="container">
           <Intro musicPath={music} />
           <div className="content">
-            <PhotoSection />
+            {/* <PhotoSection /> */}
             <div className="sections">
               <AboutMe />
-              <Portfolio />
-              <Resume />
+              {/* <Portfolio /> */}
+              {/* <Resume /> */}
               <Contact />
             </div>
           </div>
