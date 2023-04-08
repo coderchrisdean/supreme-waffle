@@ -1,6 +1,6 @@
 .footer {
     background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -10,13 +10,5 @@
     padding: 1rem;
 }
 
-.footer-links {
-    color: white;
-    margin: 0 1 rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
 
-.footer-links:hover {
-    color: #23d997;
-}
+

@@ -3,8 +3,9 @@ import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import AboutMe from './sections/AboutMe/AboutMe';
 import Portfolio from './sections/Portfolio/Portfolio';
-import Contact from './sections/Contact/Contact';
+import Contact from './components/Contact/Contact';
 import Resume from './sections/Resume/Resume';
+import Technologies from './sections/Technologies/Technologies';
 import Footer from './components/Footer/Footer';
 import PhotoSection from './components/PhotoSection/PhotoSection';
 import ReactAudioPlayer from 'react-audio-player';
@@ -31,7 +32,7 @@ function App() {
           {/* <PhotoSection /> */}
           <AboutMe />
           {/* <Portfolio /> */}
-          {/* <Resume /> */}
+          <Technologies />
           <Contact />
         </div>
       ) : (
@@ -41,10 +42,10 @@ function App() {
             {/* <PhotoSection /> */}
             <div className="sections">
               <AboutMe />
-              {/* <Portfolio /> */}
+              <Technologies />
               {/* <Resume /> */}
-              <Contact />
             </div>
+            <Contact />
           </div>
         </div>
       )}
