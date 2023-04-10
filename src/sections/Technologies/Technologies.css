@@ -1,10 +1,11 @@
 .technologies {
     margin-top: 3rem;
     text-align: center;
+    z-index: 100;
   }
   
   .technologies h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #333;
     margin-bottom: 2rem;
@@ -12,25 +13,180 @@
   
   .technologies-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   
   .technology {
+    opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
-    font-size: 1.2rem;
+    margin: 0;
+    font-size: 1rem;
     color: #333;
   }
   
-  .technology i {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  .orbit {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    animation: rotateOrbit 6s linear infinite;
+    transform-style: preserve-3d;
+    perspective: 1000px;
   }
   
-  .technology span {
-    font-size: 1rem;
+  .planet {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    transform-style: preserve-3d;
+  }
+  
+    .orbit .planet:nth-child(2) {
+      width: 2.6rem;
+      height: 2.6rem;
+      top: 50%;
+      left: 50%;
+      margin-top: -1.3rem;
+      margin-left: -1.3rem;
+      background: linear-gradient(45deg, #8f78ff, #fc73ff);
+    }
+  
+    .orbit .planet:nth-child(2) .icon {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-top: -8px;
+    }
+  
+    .orbit .planet:nth-child(3) {
+      width: 2.2rem;
+      height: 2.2rem;
+      top: calc(50% - 60px);
+      left: calc(50% - 60px);
+      background: linear-gradient(45deg, #f6d365, #fda085);
+      animation: spin 14s linear infinite;
+    }
+  
+    .orbit .planet:nth-child(3) .icon {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-top: -6px;
+    }
+  
+    .orbit .planet:nth-child(4) {
+      width: 1.8rem;
+      height: 1.8rem;
+      top: calc(50% - 110px);
+      left: calc(50% - 110px);
+      background: linear-gradient(45deg, #F58529, #DD2A7B);
+      animation: spin-reverse 10s linear infinite;
+    }
+  
+    .orbit .planet:nth-child(4) .icon {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-top: -4px;
+    }
+  .technology .planet span {
+    position: absolute;
+    top: calc(50% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg) rotateX(90deg);
+    }
+    to {
+      transform: rotateY(360deg) rotateX(90deg);
+    }
+  }
+  
+  @keyframes spin-reverse {
+    from {
+      transform: rotateY(0deg) rotateX(90deg);
+    }
+    to {
+      transform: rotateY(-360deg) rotateX(90deg);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .technology {
+      margin: 1rem;
+    }
+  
+    .planet {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .technology .planet span {
+      top: calc(50% + 20px);
+      font-size: 12px;
+    }
+  
+    .technology .planet .icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .technology:nth-child(3) .planet {
+    animation-delay: 1.2s;
+  }
+  
+  .technology:nth-child(4) .planet {
+    animation-delay: 1.8s;
+  }
+  
+  .technology:nth-child(5) .planet {
+    animation-delay: 2.4s;
+  }
+  
+  .technology:nth-child(6) .planet {
+    animation-delay: 3s;
+  }
+  
+  .technology:nth-child(7) .planet {
+    animation-delay: 3.6s;
+  }
+  
+  .technology:nth-child(8) .planet {
+    animation-delay: 4.2s;
+  }
+  
+  @media (max-width: 768px) {
+    .technologies h3 {
+      margin-top: 4rem;
+    }
+    
+    .technologies-container {
+      flex-direction: column;
+      margin: 2rem;
+    }
+    
+    .technology {
+      margin: 2rem 0;
+    }
+    
+    .planet {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    
+    .planet .icon {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .planet span {
+      top: calc(50% + 20px);
+      font-size: 12px;
+    }
   }
   

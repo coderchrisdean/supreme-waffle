@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navigation.css';
 
-const Navigation = () => {
-  const [activeLink, setActiveLink] = useState('About Me');
+const Navigation = ({ activeLink, onNavClick }) => {
   
   const handleNavClick = (link) => {
-    setActiveLink(link);
+    onNavClick(link);
   };
 
   return (
     <nav className="navigation">
       <ul className="nav-list">
-        {['About Me', 'Technologies', 'Resume', 'Portfolio', 'Contact'].map((link) => (
+        {['About Me', 'Portfolio', 'Technologies', 'Resume', 'Contact'].map((link) => (
           <li key={link} className={`nav-item ${activeLink === link ? 'active' : ''}`}>
             <button onClick={() => handleNavClick(link)} className="nav-link">{link}</button>
           </li>
