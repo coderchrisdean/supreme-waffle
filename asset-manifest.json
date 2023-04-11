@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/supreme-waffle/static/css/main.f5a3b545.css",
+    "main.css": "/supreme-waffle/static/css/main.05b75acd.css",
     "main.js": "/supreme-waffle/static/js/main.3ebbeb8e.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/supreme-waffle/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/AVATAR.jpeg": "/supreme-waffle/static/media/AVATAR.4dad99e782f6f03733b9.jpeg",
@@ -9,11 +9,11 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/supreme-waffle/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/supreme-waffle/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/supreme-waffle/index.html",
-    "main.f5a3b545.css.map": "/supreme-waffle/static/css/main.f5a3b545.css.map",
+    "main.05b75acd.css.map": "/supreme-waffle/static/css/main.05b75acd.css.map",
     "main.3ebbeb8e.js.map": "/supreme-waffle/static/js/main.3ebbeb8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5a3b545.css",
+    "static/css/main.05b75acd.css",
     "static/js/main.3ebbeb8e.js"
   ]
 }
