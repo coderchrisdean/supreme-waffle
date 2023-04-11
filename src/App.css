@@ -74,6 +74,14 @@ body {
   margin: 0 25px;
 }
 
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 110px);
+}
+
 .sections {
   grid-area: content;
   display: flex;

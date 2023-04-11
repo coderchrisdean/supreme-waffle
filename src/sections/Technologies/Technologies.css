@@ -1,5 +1,5 @@
 .technologies {
-    margin-top: 3rem;
+
     text-align: center;
     z-index: 100;
   }
@@ -7,26 +7,30 @@
   .technologies h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
-    margin-bottom: 2rem;
+
   }
   
   .technologies-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    /* border:#8f78ff 1px solid; */
+    padding: 10px;
   }
   
   .technology {
-    opacity: 1;
+    opacity: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0;
     font-size: 1rem;
-    color: #333;
   }
   
+  span {
+    margin-left: 38px;
+  }
   .orbit {
     position: relative;
     width: 7rem;
