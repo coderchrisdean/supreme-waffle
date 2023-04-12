@@ -48,6 +48,6 @@ MIT License
 
 ## Screenshots
 
-![Screenshot of Intro](./src/assets/images/intro.jpg)
-![Screenshot of About Me](./src/assets/images/contact.png)
-![Screenshot of Technologies](./src/assets/images/technologies.jpg)
+![Screenshot of Intro](./public/assets/images/intro.jpg)
+![Screenshot of About Me](./public/assets/images/intro.jpg)
+![Screenshot of Technologies](./public/assets/images/intro.jpg)
