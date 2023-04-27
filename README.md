@@ -49,5 +49,5 @@ MIT License
 ## Screenshots
 
 ![Screenshot of Intro](./public/assets/images/intro.jpg)
-![Screenshot of About Me](./public/assets/images/intro.jpg)
-![Screenshot of Technologies](./public/assets/images/intro.jpg)
+![Screenshot of About Me](./public/assets/images/technologies.jpg)
+![Screenshot of Technologies](./public/assets/images/recipeasy.jpg)
