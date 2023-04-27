@@ -1,11 +1,12 @@
 import React from 'react';
 import './Resume.css';
-import ComingSoon from '../../components/ComingSoon/ComingSoon'
+// import ComingSoon from '../../components/ComingSoon/ComingSoon'
+
 
 const Resume = () => {
     return (
-        <div className="portfolio">
-        <ComingSoon />
+        <div className="resume">
+        <a href="/public/assets/cv/sample_cv.pdf" target='_blank' rel="noreferrer">View Resume</a>
         </div>
     );
 };

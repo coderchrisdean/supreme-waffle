@@ -41,7 +41,7 @@ function App() {
         setShowTechnologies(false);
         setShowResume(false);
         setShowContact(false);
-        // setContactHeight(0);
+        setContactHeight(0);
         break;
       case "Portfolio":
         setShowAboutMe(false);
@@ -49,7 +49,7 @@ function App() {
         setShowTechnologies(false);
         setShowResume(false);
         setShowContact(false);
-        // setContactHeight(0);
+        setContactHeight(0);
         break;
       case "Technologies":
         setShowAboutMe(false);
@@ -57,7 +57,7 @@ function App() {
         setShowTechnologies(true);
         setShowResume(false);
         setShowContact(false);
-        // setContactHeight(0);
+        setContactHeight(0);
         break;
       case "Resume":
         setShowAboutMe(false);
@@ -65,7 +65,7 @@ function App() {
         setShowTechnologies(false);
         setShowResume(true);
         setShowContact(false);
-        // setContactHeight(0);
+        setContactHeight(0);
         break;
       case "Contact":
         setShowAboutMe(false);
@@ -73,7 +73,7 @@ function App() {
         setShowTechnologies(false);
         setShowResume(false);
         setShowContact(true);
-        // setContactHeight(0);
+        setContactHeight(0);
         break;
       default:
         setShowAboutMe(true);
@@ -81,7 +81,7 @@ function App() {
         setShowTechnologies(false);
         setShowResume(false);
         setShowContact(false);
-        // setContactHeight(0);
+        setContactHeight(0);
     }
   };
 
@@ -122,7 +122,7 @@ function App() {
               )}
               {showResume && <Resume />}
             </div>
-            <ContactForm />
+            {showContact && <ContactForm />}
            <Contact ref={contactRef}/>
           </div>
           </div>
