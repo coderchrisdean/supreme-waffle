@@ -1,11 +1,11 @@
 import React from 'react';
-import ComingSoon from '../../components/ComingSoon/ComingSoon'
+import Recipeasy from '../../components/Recipeasy/Recipeasy';
 import './Portfolio.css';
 
 const Portfolio = () => {
     return (
-        <div className="resume">
-        <ComingSoon />
+        <div className="portfolio-container">
+        <Recipeasy />
         </div>
     );
 };

@@ -1,0 +1,26 @@
+.recipeasy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.recipeasy-image {
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.recipeasy-link {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.recipeasy-link:hover {
+    text-decoration: underline;
+}
