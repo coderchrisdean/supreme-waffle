@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import ReactAudioPlayer from "react-audio-player";
 import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false); //check if user is on a mobile device to determine styling
@@ -18,6 +19,7 @@ function App() {
   const [showTechnologies, setShowTechnologies] = useState(false);
   const [showResume, setShowResume] = useState(false);
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showContact, setShowContact] = useState(false);
   const [contactHeight, setContactHeight] = useState(false);
   const contactRef = useRef(null); 
   
@@ -38,42 +40,48 @@ function App() {
         setShowPortfolio(false);
         setShowTechnologies(false);
         setShowResume(false);
-        setContactHeight(0);
+        setShowContact(false);
+        // setContactHeight(0);
         break;
       case "Portfolio":
         setShowAboutMe(false);
         setShowPortfolio(true);
         setShowTechnologies(false);
         setShowResume(false);
-        setContactHeight(0);
+        setShowContact(false);
+        // setContactHeight(0);
         break;
       case "Technologies":
         setShowAboutMe(false);
         setShowPortfolio(false);
         setShowTechnologies(true);
         setShowResume(false);
-        setContactHeight(0);
+        setShowContact(false);
+        // setContactHeight(0);
         break;
       case "Resume":
         setShowAboutMe(false);
         setShowPortfolio(false);
         setShowTechnologies(false);
         setShowResume(true);
-        setContactHeight(0);
+        setShowContact(false);
+        // setContactHeight(0);
         break;
       case "Contact":
         setShowAboutMe(false);
         setShowPortfolio(false);
         setShowTechnologies(false);
         setShowResume(false);
-        setContactHeight(0);
+        setShowContact(true);
+        // setContactHeight(0);
         break;
       default:
         setShowAboutMe(true);
         setShowPortfolio(false);
         setShowTechnologies(false);
         setShowResume(false);
-        setContactHeight(0);
+        setShowContact(false);
+        // setContactHeight(0);
     }
   };
 
@@ -114,7 +122,8 @@ function App() {
               )}
               {showResume && <Resume />}
             </div>
-           <Contact ref={contactRef} style={{ visibility: 'hidden', height: 0, overflow: 'hidden' }} />
+            <ContactForm />
+           <Contact ref={contactRef}/>
           </div>
           </div>
         </>
